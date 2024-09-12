@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-color: #a31716;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+header{
+    margin: 0 30rem;
+}
+
+.navBar a{
+    color: #fff;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navBar h4{
+    float: left;
+    color: #fff;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.navBar {
+    overflow: hidden;
+}
+
+.navBar a:hover{
+    background-color: #555;
+}
+
+.navBar img{
+    display: none;
+}
+
+#heroSection{
+    color: #fff;
+    margin: auto;
+
+}
+
+#heroSection .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#heroSection .boton{
+    flex: 0;
+}
+
+#heroSection img{
+    border-width: 0.5px;
+    border: #000;
+    border-style: solid;
+}
+
+#heroSection h1{
+    text-shadow: 4px #000;   
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+#heroSection .boton{
+    align-items: end;
+    
+}
+
+.boton {
+    background-color: #3f3333;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+.boton a{  
+    text-decoration: none;
+    color: white;
+}
+
+.boton:hover{
+    background-color: #4b3b3b;
+}
+
+#companies{
+    display: flex;
+    justify-content: center;
+    margin: 160px 0px 35px 0px;
+}
+
+#companies .container{
+    display: flex;
+    justify-content: center;
+}
+
+#companies .compa2 {
+    display: none;
+}
+
+#branding .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.brandSystem{
+    max-width: 400px;
+    font-size: 20px;
+}
+.brandSystem p{
+    font-size: 15px;
+}
+
+#customSection .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#customSection h1{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 200px;
+    align-self: center;
+}
+
+#parrafoEse{
+    display: none;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+}
+
+.contenedorWeb {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.contenedorWeb{
+    padding: 15px;
+}
+
+.contenedorWeb > div{
+    background-color: #fff;
+    width:275px;
+    height: 175px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+#imagenContenedora{
+    padding: 10px;
+    width: 33px;
+    height: 27px;
+    border-radius: 10px;
+}
+
+.websiteDesign img{
+    background-color: rgb(229, 160, 171);
+}
+
+.webDevelopment img{
+    background-color: rgb(238, 187, 142);
+}
+
+.mobileDevelopment img{
+    background-color: rgb(106, 252, 252);
+}
+
+#contact{
+    padding: 30px;
+}
+#contact .container{
+    display: flex;
+    justify-content: center;
+    background-color: #ada7a7;
+    border-radius: 30px;
+    max-width: 65em;
+    padding: 20px;
+    font-size: large;
+}
+
+#contact h1{
+    color: #fff;
+}
+
+#contact p{
+    color: #fff;
+}
+
+.footer{
+    background-color: #857978;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer li{
+    padding: 15px;
+    
+}
+
+.titular{
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+@media only screen and (max-width: 800px) {
+    .container{
+        max-width: 800px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    h1{
+        font-size: 35px;
+        justify-content: center;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+
+    header{
+        margin: 0px;
+    }
+
+    .navBar a{
+        display: none;
+    }
+
+    .navBar img{
+        display: flex;
+        float: right;
+        padding: 15px;
+    }
+
+    #heroSection img{
+        border-style: none;
+    }
+
+    #heroSection .container{
+        justify-content: center;
+    }
+
+    #heroSection .boton{
+        margin: 0 auto;
+        display: block;
+        max-width: 200px;
+        background-color: #000;
+    }
+
+    #companies .compa1{
+        display: none;
+    }
+
+    #companies .compa2{
+        display: flex;
+        justify-content: center;
+    }
+
+    #branding .container{
+        flex-wrap: wrap-reverse;
+    }
+
+    #customSection .container{
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+    }
+
+    #customSection .mobileDevelopment{
+        display: none;
+    }
+
+    #customSection .contenedorWeb{
+        flex-wrap: wrap;
+    }
+
+    #customSection h1{
+        margin-bottom: 15px;
+    }
+
+    #parrafoEse{
+        display: block;
+    }
+
+    #contact .container{
+        background-color: #331b3b;
+    }    
+    #contact img{
+        display: none;
+    }
+
+    #contact .boton{
+        display: block;
+        background-color: #000;
+        margin: 0 auto;
+        max-width: 200px;
+    }
+
+    .footer{
+        background-color: #331b3b;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}   
